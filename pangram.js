@@ -5,5 +5,5 @@ export const isPangram = (sentence) => {
   for (const letter of sentence) {
     allLetters = allLetters.filter((l) => l !== letter.toLowerCase());
   }
-  return allLetters == 0 ? true : false;
+  return allLetters.length === 0 ? true : false;
 };
